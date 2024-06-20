@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "date": 2024,
+    "topic": "Testing",
+    "article": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ab, quod nostrum consequatur sunt, delectus odio obcaecati quam odit asperiores illo provident eligendi dolore optio facere modi, aperiam deleniti?",
+    "author": "Ibn"
+  },
+  {
+    "id": 2,
+    "date": 2024,
+    "topic": "Testing",
+    "article": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ab, quod nostrum consequatur sunt, delectus odio obcaecati quam odit asperiores illo provident eligendi dolore optio facere modi, aperiam deleniti?",
+    "author": "Ibn"
+  },
+  {
+    "id": 3,
+    "date": 2024,
+    "topic": "Testing",
+    "article": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ab, quod nostrum consequatur sunt, delectus odio obcaecati quam odit asperiores illo provident eligendi dolore optio facere modi, aperiam deleniti?",
+    "author": "Ibn"
+  },
+  {
+    "id": 4,
+    "date": 2024,
+    "topic": "Testing",
+    "article": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ab, quod nostrum consequatur sunt, delectus odio obcaecati quam odit asperiores illo provident eligendi dolore optio facere modi, aperiam deleniti?",
+    "author": "Ibn"
+  }
+]

@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+
+.blog {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1rem;
+  gap: 1.3rem;
+}
+
+.blog-item {
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem;
+  padding: 1rem;
+}
+
+.form {
+  border: 1px solid;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.11);
+}
+
+form {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+form input {
+  width: 19rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+}
+
+.error {
+  color: rgba(255, 0, 0, 0.87);
+}
+
+form button {
+  width: 19rem;
+}
