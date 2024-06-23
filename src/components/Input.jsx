@@ -3,12 +3,22 @@ import React from "react";
 
 function Input({ value, onChange, name, place, type, label }) {
     return (
-        <div>
-            <label>{label}</label>
-            <input type={type} name={name} value={value} onChange={onChange} placeholder={place} />
+        <div className="input-container">
+            {label && <label htmlFor={name}>{label}</label>}
+            <input
+                id={name}
+                type={type}
+                name={name}
+                value={value}
+                onChange={onChange}
+                placeholder={place}
+                className="input-field"
+            />
         </div>
     );
 }
+
+
 
 // Input.propTypes = {
 //     value: PropTypes.string.isRequired,

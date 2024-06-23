@@ -12,9 +12,11 @@ function SelectedPost() {
             <div className="post-details">
                 <button onClick={handleBackClick}>Back</button>
                 <h1>{selectedPost.topic}</h1>
-                <p>{selectedPost.date}</p>
-                <p>{selectedPost.author}</p>
-                <p>{selectedPost.article}</p>
+                <div className="details">
+                    <p>{selectedPost.date}</p>
+                    <p className="author">{selectedPost.author}</p>
+                </div>
+                <p className="article">{selectedPost.article}</p>
                 <div className="comments">
                     <h2>Comments</h2>
                     {selectedPost.comments.map((comment, index) => (
@@ -32,6 +34,8 @@ function SelectedPost() {
                     </form>
                 </div>
             </div>
+
+
         </>
     );
 }
