@@ -1,5 +1,4 @@
-import { useEffect, useState, createContext } from "react";
-import Input from "./Input";
+import React, { useEffect, useState, createContext } from "react";
 import "../App.css";
 import SelectedPost from "./SelectedPost";
 
@@ -52,15 +51,27 @@ function DisplayBlog({ children }) {
     };
 
     useEffect(() => {
-        const storedBlog = localStorage.getItem("blogPosts");
-        if (storedBlog) {
-            const parsedBlog = JSON.parse(storedBlog);
-            const updatedBlog = parsedBlog.map(post => ({
-                ...post,
-                comments: post.comments || []
-            }));
-            setBlog(updatedBlog);
-        }
+        const fetchData = async () => {
+            try {
+                const response = await fetch('./blog.json');
+                if (!response.ok) {
+                    throw new Error('Failed to fetch');
+                }
+                const data = await response.json();
+                const updatedBlog = data.map(post => ({
+                    ...post,
+                    comments: post.comments || []
+                }));
+
+                setBlog(updatedBlog);
+                localStorage.setItem("blogPosts", JSON.stringify(updatedBlog));
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                setError('Failed to fetch blog posts.');
+            }
+        };
+
+        fetchData();
     }, []);
 
     const handlePostClick = (post) => {
