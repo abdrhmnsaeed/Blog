@@ -48,7 +48,7 @@
 .form {
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.466);
   padding: 20px;
   margin: 20px;
   max-width: 600px;
@@ -136,12 +136,18 @@
 .blog-item {
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.349);
   padding: 20px;
   margin: 10px;
   width: 300px;
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .blog-item {
+    width: 100%;
+  }
 }
 
 /* Hover styles for blog items */
